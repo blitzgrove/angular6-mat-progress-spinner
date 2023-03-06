@@ -1,0 +1,24 @@
+<mat-card>
+  <mat-card-content>
+    <!-- h2 class="example-h2">Progress spinner with background</h2 -->
+
+    <div class="spinner-container">
+      <div class="spinner-background">{{spinner.value}}%</div>
+      <mat-progress-spinner
+        #spinner
+        color="primary"
+        mode="determinate"
+        value="85"
+      >
+      </mat-progress-spinner>
+    </div>
+
+    <br />
+    <spinner-container color="primary" mode="determinate" value="75">
+    </spinner-container>
+  </mat-card-content>
+</mat-card>
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
